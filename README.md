@@ -7,6 +7,13 @@ I made this so that it will auto-join Zoom classes for me, even when I forget. I
 I have tested this various times but I don't want to be held accountable because you missed your economy class.
 This is among one of the most complex things I've coded so I may have missed a few bugs.. Be cautious. 
 
+## Flexibility
+This script is designed to expect and correct human error. Let's put that into less speculative words.
+It will join the meeting 5 minutes early for you.
+If you are late for a meeting it will immediately fire it up for you. 
+If you missed the meeting, it knows and it will ignore it.
+This type of stuff is why it's so complex and why, once again, it may have bugs.
+
 ## Usage
 Add your classes/meetings into meetings.csv. Follow this format:
 ```
