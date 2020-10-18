@@ -3,9 +3,15 @@ Python 3.7 script to open links at specific times. Made for Zoom meetings mainly
 You simply put your meeting data into the .csv and it handles the rest.
 I made this so that it will auto-join Zoom classes for me, even when I forget. It's lightweight, portable, and simple.
 
-**DISCLAIMER: I AM NOT RESPONSIBLE FOR MISSED MEETINGS DUE TO A FAULT IN THIS PROGRAM. USE AT YOUR OWN RISK.**
+# A word of caution
+
+**FIRST OFF: I AM NOT RESPONSIBLE FOR MISSED MEETINGS OR CLASSES DUE TO A FAULT IN THIS PROGRAM. USE AT YOUR OWN RISK.**
 I have tested this various times but I don't want to be held accountable because you missed your economy class.
 This is among one of the most complex things I've coded so I may have missed a few bugs.. Be cautious. 
+
+**This script does not have persistence**. In other words, if you close it, it will stop doing its job. It has no save feature that will remember that you are currently in a class, so if you fire it back up it will attempt to join that class again.
+I might add persistence in the future, should be easy. This is, right now, really just a proof of concept.
+
 
 ## Flexibility
 This script is designed to expect and correct human error. Let's put that into less speculative words.
