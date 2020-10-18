@@ -36,5 +36,6 @@ So if your meeting is on a Friday, the third column should be F.
 pyfiglet==0.8.post1
 ```
 Simply run `pip install pyfiglet`. ez.
+Don't want to install pyfiglet for my stupid logo stuff? I understand. You can just delete lines 7 - 25, inclusive.
 
 ### 
