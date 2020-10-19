@@ -26,7 +26,7 @@ sleep(5)
 # init empty set. we will use this to store the currently ongoing meetings, that way the system doesn't reopen them.
 runningclasses = []
 # lookup table for converting weekdays to college-esque abbreviations.
-lookup = {'Monday':'M','Tuesday':'T','Wednesday':'W','Thursday':'R','Friday':'F'}
+lookup = {'Sunday':'S','Monday':'M','Tuesday':'T','Wednesday':'W','Thursday':'R','Friday':'F','Saturday':'Sa'}
 # empty dict that we will store contents of the csv in
 meetings = {}
 # csv reading, writes to dict
@@ -44,7 +44,7 @@ def initiate_session(name):
     runningclasses.append(name)
     link = meetings[name]['link']
     print(f'{bcolors.OKBLUE}Initiating meeting...')
-    webbrowser.open(link)
+    #webbrowser.open(link)
 
 # main loop
 while True:
@@ -60,13 +60,15 @@ while True:
         classlink = meetings[meeting]['link']
         # if and only if the event is today, run this code
         if lookup[today] in meetings[meeting]['days'].split():
-            print('today')
             # parse event time into a datetime object
             targettime = datetime.strptime(meetings[meeting]['time'],"%I:%M %p")
             # datetime object is just time, so we need to combine it with today's date so its not from 1997. literally
             targettime = datetime.combine(datetime.today().date(),targettime.time())
             # time from now
             tfn = get_time_from_now(targettime)
+            # if meeting already running, do not run it again
+            if meeting in runningclasses:
+                break
             # check if event is in the future. if it is, run specific warnings, ie a 30-minute before warning
             if tfn > 0:
                 if tfn < 30:
