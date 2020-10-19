@@ -51,4 +51,5 @@ pyfiglet==0.8.post1
 Simply run `pip install pyfiglet`. ez.
 Don't want to install pyfiglet for my stupid logo stuff? I understand. You can just delete lines 7 - 25, inclusive.
 
-### 
+### It's spamming my console!
+Your console/OS/IDE doesn't seem to support the cls command which is to clear the console every time the script loops to keep it clean. In the future I will add support for other OS' if I have access to test on these computers. 
