@@ -5,7 +5,7 @@ I made this so that it will auto-join Zoom classes for me, even when I forget. I
 
 # A word of caution
 
-**FIRST OFF: I AM NOT RESPONSIBLE FOR MISSED MEETINGS OR CLASSES DUE TO A FAULT IN THIS PROGRAM. USE AT YOUR OWN RISK.**
+**FIRST OFF: I AM NOT RESPONSIBLE FOR MISSED/LATE/INCONSISTENT MEETINGS OR CLASSES DUE TO A FAULT IN THIS PROGRAM. USE AT YOUR OWN RISK.**
 I have tested this various times but I don't want to be held accountable because you missed your economy class.
 This is among one of the most complex things I've coded so I may have missed a few bugs.. Be cautious. 
 
